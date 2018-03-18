@@ -18,6 +18,8 @@ function deepestChild() {
   let grandNode = document.querySelector("#grandNode");
   let deepestChild = false;
   
+  console.log(grandNode);
+  
   while(deepestChild === false) {
     
   }
