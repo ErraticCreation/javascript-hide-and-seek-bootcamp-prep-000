@@ -22,7 +22,7 @@ function deepestChild() {
   
   while(currentQuery.innerHTML !== "boo!") {
     currentQuery = query(currentNode);
-    currentNode += " div";
+    currentNode = `${currentNode} div`;
   }
   return query(currentNode);
 }
