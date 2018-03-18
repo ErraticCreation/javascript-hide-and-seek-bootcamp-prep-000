@@ -16,14 +16,14 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   let currentNode = "#grand-node";
-  let query = document.querySelectorAll(currentNode);
+  let query = (node) => { return document.querySelectorAll(node) };
   let deepestChild = false;
   
   while(deepestChild === false) {
-    query = query;
-    if(currentNode.innerHTML === "boo!") {
+    currentNode += " div";
+    if(query(currentNode).innerHTML === "boo!") {
       deepestChild = true;
-      return currentNode;
+      return query(currentNode);
     }
   }
 }
