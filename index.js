@@ -3,7 +3,7 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  return document.querySelectorAll("div#nexted div.target");
+  return document.querySelector("#nexted div div div div.target");
 }
 
 function increaseRankBy(n) {
