@@ -15,13 +15,5 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  let currentNode = "#grand-node div";
-  let query = (node) => { return document.querySelector(node) };
-  let currentQuery = query(currentNode);
   
-  for (let i = 0; i < currentQuery.length; i++) {
-    currentQuery = query(currentNode);
-    currentNode = `${currentNode} div`;
-  }
-  return query(currentNode);
 }
