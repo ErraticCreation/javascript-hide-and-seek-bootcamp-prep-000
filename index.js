@@ -16,6 +16,6 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   let grandNode = querySelector("#grandNode");
-  
+  let next = ;
   
 }
