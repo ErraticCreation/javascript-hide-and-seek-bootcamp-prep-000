@@ -20,7 +20,7 @@ function deepestChild() {
   
   while(deepestChild === false) {
     currentNode = currentNode.querySelector("div");
-    if(currentNode) {
+    if(currentNode.innerHTML === "boo!") {
       
     }
   }
