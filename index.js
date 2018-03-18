@@ -20,12 +20,9 @@ function deepestChild() {
   let currentQuery = query(currentNode);
   let deepestChild = false;
   
-  while(deepestChild === false) {
+  while(currentQuery.innerHTML !== "boo!") {
     currentQuery = query(currentNode);
-    if(currentQuery.innerHTML === "boo!") {
-      deepestChild = true;
-      return query(currentNode);
-    }
     currentNode += " div";
   }
+  return query(currentNode);
 }
