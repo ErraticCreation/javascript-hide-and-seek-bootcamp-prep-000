@@ -21,7 +21,8 @@ function deepestChild() {
   while(deepestChild === false) {
     currentNode = currentNode.querySelector("div");
     if(currentNode.innerHTML === "boo!") {
-      
+      deepestChild = true;
+      return currentNode;
     }
   }
 }
