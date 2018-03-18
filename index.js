@@ -20,7 +20,7 @@ function deepestChild() {
   let currentQuery = query(currentNode);
   let deepestChild = false;
   
-  while(!currentQuery.innerHTML.includes("div")) {
+  while(currentQuery.innerHTML.trim() !== "boo!") {
     currentQuery = query(currentNode);
     currentNode = `${currentNode} div`;
   }
