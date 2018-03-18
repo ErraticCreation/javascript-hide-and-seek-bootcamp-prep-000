@@ -20,7 +20,7 @@ function deepestChild() {
   
   console.log(grandNode);
   
-  while(deepestChild === false) {
+  // while(deepestChild === false) {
     
-  }
+  // }
 }
