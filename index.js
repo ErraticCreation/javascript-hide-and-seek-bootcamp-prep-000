@@ -20,10 +20,6 @@ function deepestChild() {
   let currentQuery = query(currentNode);
   let deepestChild = false;
   
-  while(!currentQuery.innerHTML.toString().includes("div")) {
-    currentQuery = query(currentNode);
-    currentNode = `${currentNode} div`;
-	console.log(currentNode);
-  }
+  
   return query(currentNode);
 }
