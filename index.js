@@ -21,5 +21,6 @@ function deepestChild() {
   let deepestChild = false;
   
   
+  
   return query(currentNode);
 }
