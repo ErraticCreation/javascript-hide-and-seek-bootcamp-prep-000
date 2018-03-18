@@ -15,5 +15,14 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
+  let currentNode = "#grand-node div";
+  let query = (node) => { return document.querySelector(node) };
+  let currentQuery = query(currentNode);
+  let deepestChild = false;
   
+  while(currentQuery.innerHTML !== "boo!") {
+    currentQuery = query(currentNode);
+    currentNode = `${currentNode} div`;
+  }
+  return query(currentNode);
 }
