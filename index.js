@@ -21,7 +21,7 @@ function deepestChild() {
   let deepestChild = false;
   
     
-  while(currentQuery.childNodes === 1) {
+  while(currentQuery.childNodes[1] === "div") {
     currentQuery = query(currentNode);
     currentNode = `${currentNode} div`;
 	  console.log(currentNode);
