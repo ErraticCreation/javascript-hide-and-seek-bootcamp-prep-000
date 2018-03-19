@@ -21,11 +21,10 @@ function deepestChild() {
   let deepestChild = false;
   
     
-  while(currentQuery.childNode.length > 1) {
+  while(document.querySelector(currentQuery).childNode.length > 1) {
     currentNode = `${currentNode} div`;
-    currentQuery = query(currentNode);
 	  console.log(currentNode);
   }
   
-  return query(currentNode);
+  return document.querySelector(currentQuery);
 }
