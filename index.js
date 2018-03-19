@@ -21,7 +21,6 @@ function deepestChild() {
     
   while(document.querySelector(currentNode).childElementCount) {
     currentNode = `${currentNode} div`;
-	  console.log(currentNode);
   }
   
   return document.querySelector(currentNode);
